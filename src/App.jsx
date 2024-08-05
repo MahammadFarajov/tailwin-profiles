@@ -27,7 +27,7 @@ function App() {
       setIsLoading(false)
     })
   }
-  const onChangeHandler = () => {
+  const onChangeHandler = (e) => {
     setUsername(e.target.value)
   }
 

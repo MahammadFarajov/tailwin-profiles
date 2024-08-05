@@ -9,6 +9,7 @@ const User = ({user, repos}) => {
         <h1 className="text-3xl font-semibold">{user.name}</h1>
         <p className="font-medium text-slate-400">Created at: {moment(user.created_at).format("MMM Do, YYYY")}</p>
         <div className="flex gap-0.5"><div className="border-[#e7e7e9] rounded-[5px]">{user.followers}</div> Followers</div>
+        <div className="flex gap-0.5"><div className="border-[#e7e7e9] rounded-[5px]">{user.following}</div> Following</div>
       </div>
       <div className="w-3/4 border-slate-300 border rounded-md p-5">
         <h1 className="text-4xl font-semibold mb-4">Repositories</h1>
